@@ -1,0 +1,49 @@
+    .article__sucursal{
+        background-image: $main-color;
+        border: $basic-border;
+        height: 370px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: space-between;
+        grid-row-gap: 15px;
+        h2{
+            background-color: $bg-color-box;
+            border: $basic-border;
+            margin: 1% auto;
+            padding: 2%;
+            border-radius: 10px;
+            transition: 1s;
+            &:hover{
+                background-color: $second-color;
+                border: $hover-border;
+                -webkit-text-stroke: $estilobasico-bordes-letras;
+                color: $color-titulos;
+            }
+        }
+        img{
+            border: $basic-border;
+            transition: border, border-radius 1s;
+            &:hover{
+                border: $border-image;
+                border-radius: 10px;
+            }
+        }
+        h3{
+            color: white;
+            -webkit-text-stroke: $estilobasico-bordes-letras;
+            &:hover{
+                color: $second-color;
+                transition: color 1s;
+            }
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+        }
+    }

@@ -1,0 +1,78 @@
+.main{
+    background-image: $main-color;
+    color: $color-titulos;
+    -webkit-text-stroke: 0.5px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .main__container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__titulo{
+    background: $bg-color-box;
+    margin: 1% auto;
+    padding: 1%;
+    border: $basic-border;
+    border-radius: 10px;
+    transition: all 1s;
+    &:hover{
+    background-color: $second-color;
+    border: $hover-border;
+    -webkit-text-stroke: $estilobasico-bordes-letras;
+}
+}
+
+.main__parrafo{
+    color: black;
+    background: $bg-color-box;
+    margin: 1% auto;
+    padding: 1%;
+    border: $basic-border;
+    border-radius: 10px;
+    transition: all 1s;
+    &:hover{
+    background-color: $second-color;
+    border: $hover-border;
+    -webkit-text-stroke: $estilobasico-bordes-letras;
+    color: $color-titulos;
+}
+}
+
+.main__imagen{
+    border: $basic-border;
+    border-radius: 10px;
+    transition: all 1s;
+    margin: 1% auto;
+    &:hover{
+    border-radius: 50%;
+    border: 4px solid $second-color;
+}
+}
+
+.main__item{
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke: $border-letter-white;
+    background-color: $bg-color-box;
+    border: $basic-border;
+    padding: 5px;
+    transition: all 1s;
+    &:hover{
+    color: black;
+    background-color: $second-color;
+    -webkit-text-stroke: $estilobasico-bordes-letras;
+    color: white;
+    border: $hover-border;
+    border-radius: 10px;
+}
+}
+}
+
+.main__comprar{
+    margin: 8% auto;
+}

@@ -1,0 +1,298 @@
+nav {
+  background-image: linear-gradient(to left, purple, pink);
+  height: 80px;
+  color: white;
+  border: 3px solid black;
+}
+nav .nav__container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav__container .nav__logo {
+  font-size: 30px;
+  font-weight: 900;
+  -webkit-text-stroke: 0.8px black;
+  color: white;
+  text-decoration: none;
+  transition: -webkit-text-stroke 1.5s;
+  border: none;
+  transition: all 1.5s;
+}
+nav .nav__container .nav__logo:hover {
+  padding: 3%;
+  border: 2px double rgb(252, 0, 88);
+  border-radius: 15px;
+  border-width: 4px;
+  color: rgb(252, 0, 88);
+  -webkit-text-stroke: 0.4px white;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+.nav__menu .nav__item {
+  color: white;
+  text-decoration: none;
+  -webkit-text-stroke: 0.8px black;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.nav__menu .nav__item:after {
+  content: "";
+  display: block;
+  background: white;
+  width: 100%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.5s;
+}
+
+.nav__item:hover {
+  color: rgb(252, 0, 88);
+  --clippy: polygon(0 0, 99% 0, 99% 100%, 0 100%);
+}
+
+.nav__label, .nav__input {
+  display: none;
+}
+
+.main {
+  background-image: linear-gradient(to right, purple, pink);
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.main .main__container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main__titulo {
+  background: pink;
+  margin: 1% auto;
+  padding: 1%;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.main .main__titulo:hover {
+  background-color: rgb(252, 0, 88);
+  border: 3px groove white;
+  -webkit-text-stroke: 0.8px black;
+}
+.main .main__parrafo {
+  color: black;
+  background: pink;
+  margin: 1% auto;
+  padding: 1%;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.main .main__parrafo:hover {
+  background-color: rgb(252, 0, 88);
+  border: 3px groove white;
+  -webkit-text-stroke: 0.8px black;
+  color: white;
+}
+.main .main__imagen {
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: all 1s;
+  margin: 1% auto;
+}
+.main .main__imagen:hover {
+  border-radius: 50%;
+  border: 4px solid rgb(252, 0, 88);
+}
+.main .main__item {
+  text-decoration: none;
+  color: black;
+  -webkit-text-stroke: 0.5 white;
+  background-color: pink;
+  border: 3px solid black;
+  padding: 5px;
+  transition: all 1s;
+}
+.main .main__item:hover {
+  color: black;
+  background-color: rgb(252, 0, 88);
+  -webkit-text-stroke: 0.8px black;
+  color: white;
+  border: 3px groove white;
+  border-radius: 10px;
+}
+
+.main__comprar {
+  margin: 8% auto;
+}
+
+.article__sucursal {
+  background-image: linear-gradient(to right, purple, pink);
+  border: 3px solid black;
+  height: 370px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: space-between;
+  grid-row-gap: 15px;
+}
+.article__sucursal h2 {
+  background-color: pink;
+  border: 3px solid black;
+  margin: 1% auto;
+  padding: 2%;
+  border-radius: 10px;
+  transition: 1s;
+}
+.article__sucursal h2:hover {
+  background-color: rgb(252, 0, 88);
+  border: 3px groove white;
+  -webkit-text-stroke: 0.8px black;
+  color: white;
+}
+.article__sucursal img {
+  border: 3px solid black;
+  transition: border, border-radius 1s;
+}
+.article__sucursal img:hover {
+  border: 3px solid rgb(223, 51, 200);
+  border-radius: 10px;
+}
+.article__sucursal h3 {
+  color: white;
+  -webkit-text-stroke: 0.8px black;
+}
+.article__sucursal h3:hover {
+  color: rgb(252, 0, 88);
+  transition: color 1s;
+}
+.article__sucursal div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer {
+  background-image: linear-gradient(to left, purple, pink);
+  height: 180px;
+  color: white;
+  -webkit-text-stroke: 0.8px black;
+  border: 2px solid black;
+}
+.footer .footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__container p {
+  -webkit-text-stroke: 0.8px black;
+}
+.footer .footer__container p:hover {
+  color: rgb(252, 0, 88);
+  -webkit-text-stroke: 0.1px brown;
+  transition: all 1s;
+}
+.footer .footer__logo {
+  border: 3px solid black;
+  border-radius: 50%;
+  transition: border 1s;
+}
+.footer .footer__logo:hover {
+  border: 8px double rgb(252, 0, 88);
+}
+
+.footer__titulo {
+  color: white;
+  transition: color 1s;
+}
+.footer__titulo:hover {
+  color: rgb(252, 0, 88);
+}
+
+.footer__item {
+  height: 20px;
+  transition: height 0.5s;
+}
+.footer__item:hover {
+  height: 30px;
+}
+
+.footer__div_mapa {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+* body {
+  font-family: "Anton", sans-serif;
+}
+@media (max-width: 700px) {
+  * .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  * .nav__menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgb(223, 51, 200), rgb(103, 0, 103));
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+  }
+  * .nav__input:checked + .nav__menu {
+    clip-path: circle(100% at center);
+  }
+  * .main__imagen {
+    width: 125px;
+    height: 125px;
+  }
+  * .main__parrafo {
+    font-size: 75%;
+  }
+  * .footer__logo {
+    height: 50px;
+    width: 50px;
+  }
+}
+* .footer__div_mapa {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+* .footer__mapa {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
